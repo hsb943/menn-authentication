@@ -24,10 +24,19 @@ jobs:
 
     - name: Build and Push Frontend Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/menn-frontend:latest ./frontend
-        docker push ${{ secrets.DOCKER_USERNAME }}/menn-frontend:latest
+        IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/menn-frontend
+        docker buildx build --platform linux/amd64 \
+          -t $IMAGE_NAME:latest \
+          -t $IMAGE_NAME:${{ github.sha }} \
+          ./frontend \
+          --push
 
     - name: Build and Push Backend Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/menn-backend:latest ./backend
-        docker push ${{ secrets.DOCKER_USERNAME }}/menn-backend:latest
+        IMAGE_NAME=${{ secrets.DOCKER_USERNAME }}/menn-backend
+        docker buildx build --platform linux/amd64 \
+          -t $IMAGE_NAME:latest \
+          -t $IMAGE_NAME:${{ github.sha }} \
+          ./backend \
+          --push
+
