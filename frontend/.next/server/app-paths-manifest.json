@@ -1,0 +1,6 @@
+{
+  "/account/reset-password-link/page": "app/account/reset-password-link/page.js",
+  "/user/profile/page": "app/user/profile/page.js",
+  "/account/reset-password-confirm/page": "app/account/reset-password-confirm/page.js",
+  "/user/change-password/page": "app/user/change-password/page.js"
+}

@@ -1,0 +1,27 @@
+# Ignore local dependencies
+node_modules
+
+# Ignore Next.js build output if accidentally generated (safe fallback)
+.next
+
+# Ignore logs
+*.log
+npm-debug.log
+
+# Ignore secrets and env
+.env
+
+# Ignore VCS files
+.git
+.gitignore
+
+# Ignore Docker config files themselves
+Dockerfile
+.dockerignore
+
+# Ignore editor and doc files
+.vscode
+*.md
+
+# Optional: Ignore frontend if you're not building it in this image
+frontend
