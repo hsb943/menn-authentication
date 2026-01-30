@@ -212,20 +212,6 @@ validation/
 
 ---
 
-## 10. Extensibility
-
-### 10.1 Easy to Add
-- OAuth providers
-- Backend swap (REST → GraphQL)
-- Role-based access
-- Token refresh logic
-
-### 10.2 Why This Matters
-- Real products evolve
-- This structure survives growth
-
----
-
 ## 11. How to Run Locally
 
 ```bash
