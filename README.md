@@ -233,12 +233,12 @@ npm install
 npm run dev
 
 ---
-### 12. App runs on:
+## 12. App runs on:
 http://localhost:3000
 
 ---
 
-### 13. Screenshots
+## 13. Screenshots
 Browser access
 <img width="1164" height="622" alt="user-interface-browser" src="https://github.com/user-attachments/assets/6c8e047b-9738-4897-94b1-a9480d668bb0" />
 
